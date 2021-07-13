@@ -16,3 +16,4 @@ public class Count_Occurance_Of_A_Character_M3 {
         return str.length() - str.replace(String.valueOf(ch), "").length();
     }
 }
+

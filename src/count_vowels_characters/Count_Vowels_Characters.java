@@ -16,13 +16,14 @@ public class Count_Vowels_Characters {
         int cCount=0;
         for(int i=0;i<strl.length();i++)
         {
-
+            //if character is matching a or e or i or o or u then make Vowel Count increment by 1
             if(strl.charAt(i) =='a'||strl.charAt(i) =='e'||strl.charAt(i) =='i'||strl.charAt(i) =='o'||strl.charAt(i)=='u')
             {
               vCount++;
             }
-            else if(strl.charAt(i)>='a' &&strl.charAt(i)<='z')
+            else if(strl.charAt(i)>='a' && strl.charAt(i)<='z')
             {
+                //Increment character count by 1
                 cCount++;
             }
 

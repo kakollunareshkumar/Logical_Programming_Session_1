@@ -15,6 +15,7 @@ public class Count_Occurance_Of_A_Character_M1 {
         int counter = 0;
         for (int i = 0; i < str.length(); i++)
         {
+            //if str contains character that we passed increment counter by 1
             if (str.charAt(i) == ch) {
                 counter++;
             }

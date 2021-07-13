@@ -22,6 +22,8 @@ public class String_Contains_Only_Digits_Or_Not_M2 {
 
         for (int i = 0; i < str.length(); i++) {
             char ch = str.charAt(i);
+            //isDigit is a static method present in Character class.
+            // Return true if character is digit otherwise false
 
             if (!Character.isDigit(ch)) {
                return false;

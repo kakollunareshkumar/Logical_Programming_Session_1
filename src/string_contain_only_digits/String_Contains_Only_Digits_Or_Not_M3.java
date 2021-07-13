@@ -3,6 +3,7 @@ package string_contain_only_digits;
 import java.util.Scanner;
 
 public class String_Contains_Only_Digits_Or_Not_M3 {
+    //0 to 9 any digit should occur minimum one or more times
     private static final String REGEXPATTERN = "[0-9]+";
 
     public static void main(String[] args) {
@@ -21,7 +22,7 @@ public class String_Contains_Only_Digits_Or_Not_M3 {
     }
 
     public static boolean StringContainDigitsOrNot(String str) {
-
+        //Using matches method internally it is calling Pattern.matches concept in regexp tutorial
         return  str.matches(REGEXPATTERN);
 
     }

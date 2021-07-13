@@ -4,7 +4,6 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class String_Contains_Only_Digits_Or_Not_M4 {
-    private static final String REGEXPATTERN = "[0-9]+";
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -22,10 +21,13 @@ public class String_Contains_Only_Digits_Or_Not_M4 {
     }
 
     public static boolean StringContainDigitsOrNot(String str) {
-
+        //Converting string in to integer of streams by using chars method of string
         IntStream intStream = str.chars();
 
-        //return  intStream.anyMatch(i->Character.isDigit(i));
+        //compare each element of stream with condition Character.isDigit and every element should be compulsory a
+        //digit
+        //allMatch takes IntPredicate as input. Intpredicate is a functional interface and we are providing
+        //implementation using lambda expressions
         return intStream.allMatch(i->Character.isDigit(i));
     }
 }

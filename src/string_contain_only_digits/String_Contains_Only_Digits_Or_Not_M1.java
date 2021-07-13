@@ -21,17 +21,23 @@ public class String_Contains_Only_Digits_Or_Not_M1 {
     public static boolean StringContainDigitsOrNot(String str) {
         int count = 0;
         for (int i = 0; i < str.length(); i++) {
-
-            if (str.charAt(i) >= '0' && str.charAt(i) <= '9') {
-                count++;
-            }
-//
-//            int chDigit = (int)str.charAt(i);
-//            if(chDigit>=49&&chDigit<=57)
-//            {
+                //while comparing characters compiler will internally convert in to ascii table
+//            if (str.charAt(i) >= '0' && str.charAt(i) <= '9') {
 //                count++;
 //            }
+//            else
+//            {
+//                break;
+//            }
+            //Manually converting character to ascii value and comparing it with passed character
+            int chDigit = (int)str.charAt(i);
+            //Ascii  value off 0 is 48 and ascii value of 9 is 57
+            if(chDigit>=48&&chDigit<=57)
+            {
+                count++;
+            }
         }
+        //Using terinary operator
         return count == str.length() ? true : false;
     }
 }
