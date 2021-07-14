@@ -19,13 +19,14 @@ public class Count_Occurance_Of_A_Character_M5 {
 
         for(int i=0;i<str.length();i++)
         {
+
+            //If key already present get the key from hashmap and increment value by 1
             if(hmap.containsKey(str.charAt(i)))
                 hmap.put(str.charAt(i), hmap.get(str.charAt(i))+1);
-
             else
-                hmap.put(str.charAt(i), 1);
+                hmap.put(str.charAt(i), 1);       //else if it is a new character assign it with value 1
         }
-
+        //if we use get method method on a key it will return the value of a particular key
         int result = hmap.get(ch);
 
         System.out.println("The Character '"+ch+"' appears "+result+" times.");

@@ -9,7 +9,7 @@ public class Cross_Conversions {
         int i1=100;
         Long l1= new Long(i);//first way
         Long l2=Long.valueOf(i);//second way
-        System.out.println(l);
+        System.out.println(l1);
         System.out.println(l2);
         //convert long to integer
         long l3=500;
@@ -53,7 +53,5 @@ public class Cross_Conversions {
         char c3='1';
         int a2=Integer.parseInt(String.valueOf(c3));
         System.out.println(a2);
-
-
     }
 }

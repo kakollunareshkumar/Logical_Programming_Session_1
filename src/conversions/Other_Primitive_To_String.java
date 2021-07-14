@@ -18,9 +18,10 @@ public class Other_Primitive_To_String {
         System.out.println(i1+100);//300 because + is binary plus operator
         System.out.println(s1+100);//200100 because + is string concatenation operator
         //convert integer to string
-        int i2=200;
-        String s2=String.format("%d",i);
-        System.out.println(s);
+
+        float i2=200f;
+        String s2=String.format("%.2f",i2);
+        System.out.println(s2);
 
         //convert date to string
         Date date = Calendar.getInstance().getTime();

@@ -16,11 +16,13 @@ public class Count_Occurance_Of_A_Character_M4 {
 
 
     private static int countOccurrences(String str, char ch) {
-
+        //Matcher is a class that uses regexp pattern.compile method to find regular expression
+        // in a given string
         Matcher matcher = Pattern.compile(String.valueOf(ch))
                 .matcher(str);
 
         int counter = 0;
+        //find the expression that matches the pattern
         while (matcher.find()) {
             counter++;
         }

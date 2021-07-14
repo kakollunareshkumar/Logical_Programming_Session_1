@@ -3,7 +3,6 @@ package conversions;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.Scanner;
 
 public class String_To_Other_primitive_Data_Types {
     public static void main(String[] args) throws ParseException {
@@ -12,8 +11,8 @@ public class String_To_Other_primitive_Data_Types {
         //Converting String into int using Integer.parseInt()
         int i=Integer.parseInt(s);
         //Printing value of i
-        System.out.println(i);
-        System.out.println(s+100);
+        System.out.println(i);   //4000
+        System.out.println(s+100);   //4000100
         //Converting String into long using Integer.parseLong()
         String st="9990449935";
         long l=Long.parseLong(st);
@@ -24,7 +23,7 @@ public class String_To_Other_primitive_Data_Types {
         System.out.println(f);
         //Extract single character from string
         String ch="hello";
-        char c=ch.charAt(0);//returns h
+        char c=ch.charAt(0);    //returns h
         System.out.println("1st character is: "+c);
         //convert string to  date
         String sDate1="31/12/1998";
@@ -33,11 +32,16 @@ public class String_To_Other_primitive_Data_Types {
         String sDate4 = "Thu, Dec 31 1998";
         String sDate5 = "Thu, Dec 31 1998 23:37:50";
         String sDate6 = "31-Dec-1998 23:37:50";
+        //Day Month Year Format by /
         SimpleDateFormat formatter1=new SimpleDateFormat("dd/MM/yyyy");
+        //Day Month Year Format by -
         SimpleDateFormat formatter2=new SimpleDateFormat("dd-MMM-yyyy");
         SimpleDateFormat formatter3=new SimpleDateFormat("MM dd, yyyy");
+        //E-Day in week as text Month in text date year
         SimpleDateFormat formatter4=new SimpleDateFormat("E, MMM dd yyyy");
+        //Day in week as text Month in text Day year Hours minutes seconds
         SimpleDateFormat formatter5=new SimpleDateFormat("E, MMM dd yyyy HH:mm:ss");
+        // date with   Hours minutes seconds
         SimpleDateFormat formatter6=new SimpleDateFormat("dd-MMM-yyyy HH:mm:ss");
         Date date1=formatter1.parse(sDate1);
         Date date2=formatter2.parse(sDate2);
