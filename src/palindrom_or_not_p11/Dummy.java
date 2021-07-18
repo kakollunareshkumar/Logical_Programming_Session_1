@@ -1,4 +1,4 @@
-package palindrom_or_not;
+package palindrom_or_not_p11;
 
 public class Dummy {
     public static void main(String[] args) {
