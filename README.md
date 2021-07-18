@@ -1,2 +1,2 @@
-# Logical_Programming_Session_1
+# Logical_Programming_Sessions
  Programming_Questions_And_Solutions
