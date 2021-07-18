@@ -27,8 +27,7 @@ public class String_Palindrom_Or_Not {
         //Method 3
         String tempString = str.replaceAll("\\s+", "").toLowerCase();
 
-//        return IntStream.range(0, tempString.length() / 2)
-//                .noneMatch(i - > tempString.charAt(i) != tempString.charAt(tempString.length() - i - 1));
-
+        System.out.println(IntStream.range(0, tempString.length() / 2)
+                .noneMatch(i -> tempString.charAt(i) != tempString.charAt(tempString.length() - i - 1)));
     }
 }
