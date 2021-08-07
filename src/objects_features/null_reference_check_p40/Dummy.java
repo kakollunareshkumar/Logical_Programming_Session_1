@@ -1,4 +1,4 @@
-package objects_features.null_reference_check;
+package objects_features.null_reference_check_p40;
 
 import java.util.ArrayList;
 import java.util.Arrays;

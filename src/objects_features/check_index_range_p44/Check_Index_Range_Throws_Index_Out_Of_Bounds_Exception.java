@@ -1,4 +1,4 @@
-package objects_features.check_index_range;
+package objects_features.check_index_range_p44;
 
 import java.util.Objects;
 
@@ -7,7 +7,7 @@ public class Check_Index_Range_Throws_Index_Out_Of_Bounds_Exception {
         private static final int X_UPPER_BOUND = 11;
         private static final int Y_UPPER_BOUND = 16;
         private final int x;
-
+//Old Approach
 //        public Check_Index_Range_Throws_Index_Out_Of_Bounds_Exception(int x) {
 //
 //            if (x < 0 || x >= X_UPPER_BOUND) {
@@ -45,7 +45,7 @@ public class Check_Index_Range_Throws_Index_Out_Of_Bounds_Exception {
     }
 
     public int xMinusY1(int y) {
-
+//New Approach
         Objects.checkIndex(y, x);
 
         return x - y;

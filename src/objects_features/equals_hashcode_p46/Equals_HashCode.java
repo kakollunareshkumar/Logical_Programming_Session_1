@@ -1,4 +1,4 @@
-package objects_features.equals_hashcode;
+package objects_features.equals_hashcode_p46;
 
 import java.util.*;
 

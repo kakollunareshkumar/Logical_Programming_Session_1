@@ -1,4 +1,4 @@
-package objects_features.immutability;
+package objects_features.immutability_p47;
 
 import java.util.Date;
 

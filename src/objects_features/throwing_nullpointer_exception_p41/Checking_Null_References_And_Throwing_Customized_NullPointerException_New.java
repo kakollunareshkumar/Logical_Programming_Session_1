@@ -1,5 +1,5 @@
-package objects_features.throwing_nullpointer_exception;
-
+package objects_features.throwing_nullpointer_exception_p41;
+//New Approach
 import java.util.Objects;
 
 public class Checking_Null_References_And_Throwing_Customized_NullPointerException_New {

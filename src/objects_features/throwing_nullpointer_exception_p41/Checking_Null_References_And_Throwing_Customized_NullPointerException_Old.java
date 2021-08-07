@@ -1,4 +1,4 @@
-package objects_features.throwing_nullpointer_exception;
+package objects_features.throwing_nullpointer_exception_p41;
 //Old approach
 public class Checking_Null_References_And_Throwing_Customized_NullPointerException_Old {
     private final String name;
