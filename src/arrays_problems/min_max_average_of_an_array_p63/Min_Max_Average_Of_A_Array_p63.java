@@ -1,4 +1,4 @@
-package arrays_problems;
+package arrays_problems.min_max_average_of_an_array_p63;
 
 public class Min_Max_Average_Of_A_Array_p63 {
     public static void main(String[] args) {
