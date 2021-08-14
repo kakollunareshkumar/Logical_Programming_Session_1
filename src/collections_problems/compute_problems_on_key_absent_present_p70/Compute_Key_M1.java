@@ -7,7 +7,7 @@ import java.util.function.BiFunction;
 public class Compute_Key_M1 {
     public static void main(String[] args) {
 /*
-        computeIfPresent() method
+        computeIfPresent(key, remappingfunction) method
         key: key with which the value is to be associated.
         remappingFunction: function to do the operation on value.
         Returns: This method returns new remapped value associated with the specified key, or null if mapping returns null.

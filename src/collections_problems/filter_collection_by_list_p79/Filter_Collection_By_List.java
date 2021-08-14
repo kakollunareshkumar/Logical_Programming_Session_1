@@ -16,6 +16,7 @@ public class Filter_Collection_By_List {
         List<String> melonsByType
                 = Arrays.asList("Apollo", "Gac", "Crenshaw", "Hami");
 
+
         List<Melon> results = melons.stream()
                 .filter(t -> melonsByType.contains(t.getType()))
                 .collect(Collectors.toList());

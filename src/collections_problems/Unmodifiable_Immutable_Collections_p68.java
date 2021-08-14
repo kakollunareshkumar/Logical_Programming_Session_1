@@ -6,8 +6,9 @@ import java.util.List;
 
 public class Unmodifiable_Immutable_Collections_p68 {
 
-    private static final List<Integer> LIST
-            = Collections.unmodifiableList(Arrays.asList(1, 2, 3, 4, 5));
+    private static final List<Integer> LIST = Collections.unmodifiableList(Arrays.asList(1, 2, 3, 4, 5));
+
+
 
     private static final List<Integer> LIST1 = List.of(1, 2, 3, 4, 5);
 

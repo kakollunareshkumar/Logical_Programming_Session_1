@@ -1,29 +1,23 @@
 package collections_problems;
 import java.util.*;
 public class Dummy {
-    // Java program to demonstrate
-// computeIfPresent(Key, BiFunction) method.
-        public static void main(String[] args)
-        {
 
-            // Create a HashMap and add some values
-            HashMap<String, Integer> wordCount = new HashMap<>();
-            wordCount.put("Geeks", 1);
-            wordCount.put("for", 2);
-            wordCount.put("geeks", 3);
+    public static void main(String[] args)
+    {
 
-            // print HashMap details
-            System.out.println("Hashmap before operation :\n "
-                    + wordCount);
+        List<Integer> i = new ArrayList<>();
+        i.add(1);
+        i.add(2);
+        i.add(3);
+        System.out.println(i);
+        List<Integer> i1 = Collections.unmodifiableList(i);
+        System.out.println(i1);
+        i.add(4);
+        System.out.println(i);
+        System.out.println(i1);
 
-            // provide new value for keys which is present
-            // using computeIfPresent method
-            wordCount.computeIfPresent("Geek",
-                    (key, val) -> val + 100);
+        i1.add(5);   //UnsuportedOperationException
 
-            // print new mapping
-            System.out.println("HashMap after operation :\n "
-                    + wordCount);
-        }
     }
+}
 

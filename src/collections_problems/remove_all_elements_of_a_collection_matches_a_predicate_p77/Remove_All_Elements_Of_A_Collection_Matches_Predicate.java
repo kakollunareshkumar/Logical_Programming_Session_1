@@ -35,7 +35,7 @@ The two keys of this Map will be true and false:
 
         Map<Boolean, List<Melon>> separatedMelons = melons.stream()
                 .collect(Collectors.partitioningBy(
-                        (Melon t) -> t.getWeight() >= 3000));
+                        (t) -> t.getWeight() >= 3000));
 
         List<Melon> weightLessThan3000 = separatedMelons.get(false);
         List<Melon> weightGreaterThan3000 = separatedMelons.get(true);

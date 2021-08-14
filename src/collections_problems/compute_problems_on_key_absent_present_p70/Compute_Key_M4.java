@@ -36,7 +36,7 @@ public class Compute_Key_M4 {
         prices.put("Shoes", 200);
         prices.put("Bag", 300);
         prices.put("Pant", 150);
-        // prices.put("Shirt",400);
+        prices.put("Shirt",400);
         System.out.println("HashMap: " + prices);
 
         int returnedValue = prices.merge("Shirt", 100, (oldValue, newValue) -> oldValue + newValue);

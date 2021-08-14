@@ -6,7 +6,7 @@ import java.util.Map;
 public class Merge_Two_Maps_M2 {
     public static void main(String[] args) {
         /*
-
+map.merge(key, value, remapping function)
 This method takes three arguments as input: key, value, and a remapping function to merge values for duplicate keys.
 If the specified key is not already associated with a value or is associated with null,
 the Map.merge() method associates it with the given non-null value.

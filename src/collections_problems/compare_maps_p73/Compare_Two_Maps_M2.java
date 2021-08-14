@@ -34,7 +34,7 @@ and every element of the specified set is contained in another set.
         map3.put(2, "B");
         map3.put(3, "C");
         map3.put(3, "D");
-
+        //We can compare hashmps by key as well.
         System.out.println( map1.keySet().equals( map2.keySet() ));  //true
         System.out.println( map1.keySet().equals( map3.keySet() ));  //false
     }
